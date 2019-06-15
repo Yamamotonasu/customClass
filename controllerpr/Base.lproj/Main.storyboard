@@ -1,7 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -9,16 +13,84 @@
         <!--View Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="controllerpr" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Mb4-ZF-yVc" customClass="CustomView" customModule="controllerpr" customModuleProvider="target">
+                                <rect key="frame" x="37.5" y="183.5" width="300" height="300"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="16" translatesAutoresizingMaskIntoConstraints="NO" id="HL7-MC-Zr8">
+                                        <rect key="frame" x="15" y="15" width="270" height="65"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="65" id="ZSo-x9-gEh"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4SS-63-3s2">
+                                        <rect key="frame" x="15" y="95" width="270" height="65"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="65" id="qoQ-tt-SnI"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="italicSystem" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="detail description" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="10" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="H48-o6-UZI">
+                                        <rect key="frame" x="15" y="175" width="270" height="125"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="trailing" secondItem="H48-o6-UZI" secondAttribute="trailing" constant="15" id="2br-4b-0r7"/>
+                                    <constraint firstAttribute="height" constant="300" id="7D6-67-40t"/>
+                                    <constraint firstAttribute="bottom" secondItem="H48-o6-UZI" secondAttribute="bottom" id="ECe-ii-yzm"/>
+                                    <constraint firstItem="4SS-63-3s2" firstAttribute="top" secondItem="HL7-MC-Zr8" secondAttribute="bottom" constant="15" id="Gcb-Iv-NGM"/>
+                                    <constraint firstAttribute="width" constant="300" id="JCO-tq-KeH"/>
+                                    <constraint firstItem="HL7-MC-Zr8" firstAttribute="leading" secondItem="Mb4-ZF-yVc" secondAttribute="leading" constant="15" id="OJL-Nv-OEG"/>
+                                    <constraint firstAttribute="trailing" secondItem="HL7-MC-Zr8" secondAttribute="trailing" constant="15" id="Xvm-Fa-TEL"/>
+                                    <constraint firstItem="HL7-MC-Zr8" firstAttribute="top" secondItem="Mb4-ZF-yVc" secondAttribute="top" constant="15" id="dmg-Up-RLY"/>
+                                    <constraint firstItem="H48-o6-UZI" firstAttribute="leading" secondItem="Mb4-ZF-yVc" secondAttribute="leading" constant="15" id="ewb-s9-dCT"/>
+                                    <constraint firstAttribute="trailing" secondItem="4SS-63-3s2" secondAttribute="trailing" constant="15" id="fa5-y1-zbN"/>
+                                    <constraint firstItem="4SS-63-3s2" firstAttribute="leading" secondItem="Mb4-ZF-yVc" secondAttribute="leading" constant="15" id="ni3-nm-wUG"/>
+                                    <constraint firstItem="H48-o6-UZI" firstAttribute="top" secondItem="4SS-63-3s2" secondAttribute="bottom" constant="15" id="vLp-wF-9um"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WY9-Qt-4Qq">
+                                <rect key="frame" x="50.5" y="591" width="274" height="36"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <state key="normal" title="update View with Model Data">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="updateButtonWasPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vz0-xt-fGC"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.80440647519999997" green="1" blue="0.48515476089999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="WY9-Qt-4Qq" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Bef-qS-Ffv"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="WY9-Qt-4Qq" secondAttribute="bottom" constant="40" id="Gla-pD-emc"/>
+                            <constraint firstItem="Mb4-ZF-yVc" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="L6l-sh-GGb"/>
+                            <constraint firstItem="Mb4-ZF-yVc" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="aHy-Vk-xRC"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="descLabel" destination="4SS-63-3s2" id="2qs-lt-gLI"/>
+                        <outlet property="detailDescribeLabel" destination="H48-o6-UZI" id="rM3-2s-kYH"/>
+                        <outlet property="titlelabel" destination="HL7-MC-Zr8" id="mvc-Gk-hII"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="115.7608695652174"/>
         </scene>
     </scenes>
 </document>

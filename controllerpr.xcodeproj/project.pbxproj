@@ -13,6 +13,9 @@
 		0356F3D322B4BA9C0040F049 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0356F3D222B4BA9C0040F049 /* Assets.xcassets */; };
 		0356F3D622B4BA9C0040F049 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0356F3D422B4BA9C0040F049 /* LaunchScreen.storyboard */; };
 		0356F3E122B4BA9C0040F049 /* controllerprTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0356F3E022B4BA9C0040F049 /* controllerprTests.swift */; };
+		0356F3EF22B4F0180040F049 /* CustomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0356F3EE22B4F0180040F049 /* CustomView.swift */; };
+		0356F3F122B4F41F0040F049 /* Movie.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0356F3F022B4F41F0040F049 /* Movie.swift */; };
+		0356F3F422B4F5A10040F049 /* incredibles.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0356F3F322B4F5A10040F049 /* incredibles.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +39,9 @@
 		0356F3DC22B4BA9C0040F049 /* controllerprTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = controllerprTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0356F3E022B4BA9C0040F049 /* controllerprTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = controllerprTests.swift; sourceTree = "<group>"; };
 		0356F3E222B4BA9C0040F049 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0356F3EE22B4F0180040F049 /* CustomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomView.swift; sourceTree = "<group>"; };
+		0356F3F022B4F41F0040F049 /* Movie.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Movie.swift; sourceTree = "<group>"; };
+		0356F3F322B4F5A10040F049 /* incredibles.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = incredibles.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,8 +83,12 @@
 		0356F3CA22B4BA990040F049 /* controllerpr */ = {
 			isa = PBXGroup;
 			children = (
-				0356F3CB22B4BA990040F049 /* AppDelegate.swift */,
+				0356F3F222B4F5840040F049 /* Helpers */,
 				0356F3CD22B4BA990040F049 /* ViewController.swift */,
+				0356F3ED22B4BAFF0040F049 /* Controller */,
+				0356F3EC22B4BAEF0040F049 /* View */,
+				0356F3EB22B4BADE0040F049 /* Model */,
+				0356F3CB22B4BA990040F049 /* AppDelegate.swift */,
 				0356F3CF22B4BA990040F049 /* Main.storyboard */,
 				0356F3D222B4BA9C0040F049 /* Assets.xcassets */,
 				0356F3D422B4BA9C0040F049 /* LaunchScreen.storyboard */,
@@ -94,6 +104,37 @@
 				0356F3E222B4BA9C0040F049 /* Info.plist */,
 			);
 			path = controllerprTests;
+			sourceTree = "<group>";
+		};
+		0356F3EB22B4BADE0040F049 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				0356F3F022B4F41F0040F049 /* Movie.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		0356F3EC22B4BAEF0040F049 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				0356F3EE22B4F0180040F049 /* CustomView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		0356F3ED22B4BAFF0040F049 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		0356F3F222B4F5840040F049 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				0356F3F322B4F5A10040F049 /* incredibles.swift */,
+			);
+			path = Helpers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -197,7 +238,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0356F3EF22B4F0180040F049 /* CustomView.swift in Sources */,
 				0356F3CE22B4BA990040F049 /* ViewController.swift in Sources */,
+				0356F3F422B4F5A10040F049 /* incredibles.swift in Sources */,
+				0356F3F122B4F41F0040F049 /* Movie.swift in Sources */,
 				0356F3CC22B4BA990040F049 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -361,6 +405,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QJA2WU2RRL;
 				INFOPLIST_FILE = controllerpr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -378,6 +423,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = QJA2WU2RRL;
 				INFOPLIST_FILE = controllerpr/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",

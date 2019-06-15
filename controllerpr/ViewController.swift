@@ -10,11 +10,17 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        // Do any additional setup after loading the view.
+    @IBOutlet weak var titlelabel: UILabel!
+    @IBOutlet weak var descLabel: UILabel!
+    @IBOutlet weak var detailDescribeLabel: UILabel!
+    
+    let movie = Movie(title: incrediblesTitle, description: incrediblesDescription, detailedDescription: incredibledDetailedDescription)
+    
+    
+    @IBAction func updateButtonWasPressed(_ sender: Any) {
+        titlelabel.text = movie.title
+        descLabel.text = movie.description
+        detailDescribeLabel.text = movie.detailedDescription
     }
-
-
 }
 
